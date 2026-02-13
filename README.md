@@ -57,16 +57,12 @@ For each event of type `"Pressure"`:
 3. Only successful recoveries (e.g., without `recovery_failure`) are counted.  
 4. The metric is calculated as:
 
-\[
-\text{PLR} = \frac{\text{Number of pressures leading to recovery}}{\text{Total pressures performed}}
-\]
+PLR = (Number of pressures leading to recovery) / (Total pressures performed)
 
 ### Example
 If a player applied 20 pressures and their team recovered the ball in 10 of these situations within the next 5 seconds:
 
-\[
-\text{PLR} = \frac{10}{20} = 0.5
-\]
+Example: PLR = 10 / 20 = 0.5
 
 ### Note
 While useful, this metric depends on the defined temporal window and does not capture tactically induced recoveries outside this interval. Nevertheless, it provides a solid measure of pressure effectiveness.
@@ -118,16 +114,12 @@ For each `"Carry"` event with available freeze-frame data:
 
 The metric for each player is then calculated as:
 
-\[
-\text{Passing Line Metric} = \frac{\text{Number of valid passing options}}{\text{Total carry events with freeze-frame}}
-\]
+Passing Line Metric = (Number of valid passing options) / (Total carry events with freeze-frame)  
 
 ### Example
 If a player appears in 60 carry events with freeze-frame, and in 15 of them is considered a valid passing option:
 
-\[
-\text{Metric} = \frac{15}{60} = 0.25
-\]
+Example: Passing Line Metric = 15 / 60 = 0.25
 
 ### Note
 Although this metric provides rich insight into offensive involvement, it has some limitations:
